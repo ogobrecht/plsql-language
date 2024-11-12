@@ -16,7 +16,7 @@ export default class RegExpParser {
 
     private static regComment = `(?:\\/\\*[\\s\\S]*?\\*\\/)|(?:--.*)`;
     private static regCommentDoc = `(?:\\/\\*(\\*)?[\\s\\S]*?\\*\\/)|(?:--.*)`;
-    private static regQuote = `(?:["][^"]*["]|['][^']*[']|q'\\([\\s\\S]*?\\)'|q'\\[[\\s\\S]*?\\]'|q'\\{[\\s\\S]*?\\}'|q'\\<[\\s\\S]*?\\>'|q'\\|[\\s\\S]*?\\|'|q'![\\s\\S]*?!'|q'#[\\s\\S]*?#'|q'\`[\\s\\S]*?\`'|q'\\^[\\s\\S]*?\\^')`; //`(?:["'][^"']*["'])`;
+    private static regQuote = `(?:["][^"]*["]|['][^']*[']|q'\\([\\s\\S]*?\\)'|q'\\[[\\s\\S]*?\\]'|q'\\{[\\s\\S]*?\\}'|q'\\<[\\s\\S]*?\\>'|q'\\|[\\s\\S]*?\\|'|q'![\\s\\S]*?!'|q'#[\\s\\S]*?#'|q'\`[\\s\\S]*?\`'|q'\\^[\\s\\S]*?\\^'|q'\\~[\\s\\S]*?\\~')`; //`(?:["'][^"']*["'])`;
     private static regCommentInside = `(?:\\/\\*[\\s\\S]*?\\*\\/\\s*|--.*\\s+)*\\s*`; // a bit slower !
     private static regJumpDoc = `(\\/\\*\\*[\\s\\S]*?\\*\\/)`;
 

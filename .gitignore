@@ -2,3 +2,4 @@ todo.*
 out
 node_modules
 .history
+.vscode

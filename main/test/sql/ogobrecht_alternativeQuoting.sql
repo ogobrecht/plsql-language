@@ -165,6 +165,20 @@ END;
 ```  
 ^';
 
+    v_example := q'~
+```sql
+DECLARE
+  v_test varchar2(1000);
+BEGIN
+v_test := 
+    q'(Some text with a single ' quote.)' ||
+    q'[Some text with a single ' quote.]' ||
+    q'{Some text with a single ' quote.}' ||
+    q'<Some text with a single ' quote.>';
+END;
+```  
+~';
+
   END with_alternative_quotes;
 
   PROCEDURE symbol_not_recognized IS
